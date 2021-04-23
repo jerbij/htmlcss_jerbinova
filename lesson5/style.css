@@ -1,0 +1,166 @@
+/*
+selector {
+property: value;
+}
+selector: tag, #id, .class, tag#id, tag.class
+selector can have hierarchy:
+[parent] [child] {
+property: value;
+}
+for instance:
+I want to style only those p's that is inside element with class .header:
+.header p {
+color: green;
+}
+*/
+/*  {
+   box-sizing: border-box;
+ }*/
+a {
+    color: inherit ;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    font-family: "Roboto" sans-serif;
+    font-family: sans-serif;
+}
+
+button {
+    border: none;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+ul   {
+    margin: 0px;
+    list-style: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin: 30px 67px 0;
+
+}
+
+
+.logo-container {
+    width: 100px;
+    padding: 6px 0 0;
+}
+
+.header-menu {
+   width: 100%;
+    display: block;
+}
+
+.buttons-container {
+  width: 800px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.buttons-container .wrapper {
+    width: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header-menu li {
+    display: inline;
+}
+
+
+.menu-item {
+  display: flex;
+  margin-right: 50px;
+  }
+
+.sign-in {
+  color: #1B0A42;
+  font-size: 16px;
+  padding: 5px 5px;
+}
+
+.sign-up {
+    background: #33A2E0;
+    border-radius: 6px;
+    padding: 17px 31px;
+   font-size: 16px;
+   line-height: 24px;
+    font-weight: bold;
+    color: white;
+}
+.logo-link {
+  margin-right: 100px;
+}
+
+.image-big {
+    width: 796px;
+    height: 543px;
+}
+
+
+
+.learn-more {
+
+    margin-top: 20px;
+    width: 152px;
+    height: 63.82px;
+    left: 200px;
+    top: 588.71px;
+
+    background: #33A2E0;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #fff;
+}
+
+.main-content {
+    margin-top: 131px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.main-content .moto {
+    margin-top: 50px;
+    width: 495px;
+}
+
+.main-content .moto h1 {
+    margin: 0;
+    font-family: Ramaraja;
+        font-style: bold;
+        font-weight: normal;
+        font-size: 70px;
+        line-height: 76px;
+        letter-spacing: 0.02em;
+        color: #1B0A42;
+}
+
+.main-content .moto .text {
+    color: #9A9A9A;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+
+}
