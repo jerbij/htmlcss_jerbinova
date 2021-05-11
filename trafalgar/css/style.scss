@@ -1,0 +1,749 @@
+$borderDebugSize: 0px;
+$mainFontFamily: Mulish, sans-serif;
+$textDescriptionColor: #7D7987;
+
+* {
+  box-sizing: border-box;
+}
+
+.separator {
+  border-bottom: solid 2px black;
+  width: 56px;
+}
+
+p.supplementary-description {
+  color: $textDescriptionColor;
+  font-family: $mainFontFamily;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  margin-top: 38px;
+}
+
+.moto {
+  h2 {
+      margin: 0;
+      font-family: $mainFontFamily;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 48px;
+      letter-spacing: 0.02em;
+      color: black;
+  }
+}
+
+.announcement {
+  text-align: center;
+
+  h2 {
+    font-family: $mainFontFamily;
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    color: black;
+  }
+
+  .separator {
+    margin-top: 34px;
+  }
+
+}
+
+button.outline {
+  display: block;
+  padding: 12px 50px;
+
+  border-radius: 30px;
+  border-color: #458FF6;
+  font-family: $mainFontFamily;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #458FF6;
+  background: #fff;
+  cursor: pointer;
+
+}
+
+.dots-cont {
+  background: url('../img/dots-2.png') no-repeat;
+  width: 132px;
+  height: 115px;
+}
+
+.dots-cont.on-shape {
+  background: url('../img/dots-1.png') no-repeat;
+}
+
+.container {
+  max-width: 1218px;
+  margin: 0 auto;
+
+  .header-row {
+    border: solid $borderDebugSize green;
+    display: flex;
+    align-items: flex-end;
+    margin: 93px 0 0;
+
+    .logo-container {
+      border: solid $borderDebugSize pink;
+      flex: 1 1 auto;
+      width: 33.3%;
+
+      img {
+        display: block;
+      }
+    }
+
+    .header-menu {
+      border: solid $borderDebugSize blue;
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: flex-end;
+      width: 66.6%;
+      margin-bottom: 6px;
+
+      li {
+        display: inline;
+        margin: 0 0 0 40px;
+
+       &, * {
+          font-family: $mainFontFamily;
+          font-weight: 100;
+          font-size: 18px;
+          line-height: 18px;
+          color: #616060;
+          text-decoration: none;
+
+        }
+      }
+    }
+  }
+
+  .virtual-row {
+    border: solid $borderDebugSize black;
+    display: flex;
+    margin-top: 87px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+
+    .moto {
+      border: solid $borderDebugSize black;
+      margin-top: 102px;
+      width: 50%;
+
+      h1 {
+        padding-right: 150px;
+        font-family: $mainFontFamily;
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 56px;
+        letter-spacing: 0.03em;
+        color: black;
+      }
+
+      p {
+
+        margin-top: 20px;
+        padding-right: 150px;
+        color: $textDescriptionColor;
+        font-family: $mainFontFamily;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+      }
+
+      .button-cont {
+        margin-top: 48px;
+
+        button.consult {
+          width: 200px;
+          height: 56px;
+
+          background: #458FF6;
+          border-radius: 30px;
+          border: none;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 32px;
+          text-align: center;
+          letter-spacing: 0.02em;
+          color: #fff;
+          font-family: $mainFontFamily;
+          cursor: pointer;
+
+          :hover {
+            background: #1B69D6;
+          }
+        }
+      }
+    }
+
+    .illustration {
+      border: solid $borderDebugSize darkred;
+      width: 50%;
+
+      .bg-cont {
+        border: solid $borderDebugSize darkmagenta;
+        height: 590px;
+        padding-left: 57px;
+        margin-left: -57px;
+        padding-right: 57px;
+        margin-right: -57px;
+
+        background: url('../img/illust-healthcare.png') no-repeat;
+      }
+    }
+
+    .dots-cont {
+      position: absolute;
+      top: -28px;
+      left: -241px;
+    }
+  }
+
+
+  .services-row {
+
+    border: solid $borderDebugSize green;
+    margin-top: 207px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      padding: 0 143px;
+    }
+
+  }
+
+  .boxes-row {
+    position: relative;
+    margin-top: 33px;
+    border: solid $borderDebugSize black;
+    padding-top: 39px;
+
+
+    .bg-cont {
+      top: 0px;
+      left: -377px;
+      position: absolute;
+      border: solid $borderDebugSize brown;
+      width: 945px;
+      height: 619px;
+      background: url('../img/lapka.png') no-repeat;
+      z-index: 1;
+    }
+
+    .dots-cont {
+      position: absolute;
+      right: 8px;
+      top: 326px;
+    }
+
+    .boxes-cont {
+      position: relative;
+      border: solid $borderDebugSize red;
+      display: grid;
+      grid-template-columns: repeat(3, 350px);
+      gap: 30px;
+      padding: 0 50px;
+      z-index: 2;
+
+      .box {
+        width: 350px;
+        height: 354px;
+        border: solid $borderDebugSize green;
+        border-radius: 20px;
+        background: white;
+        padding: 50px 38px 20px;
+        box-shadow: 10px 15px 26px 0px rgb(0 0 0 / 5%);
+
+        h3 {
+          margin-top: 38px;
+          font: 600 24px $mainFontFamily;
+        }
+
+        p {
+          margin-top: 19px;
+          color: $textDescriptionColor;
+          font: 100 16px $mainFontFamily;
+          line-height: 28px;
+        }
+      }
+    }
+    .button-cont {
+      margin-top: 52px;
+      button {
+        margin: 0 auto;
+      }
+    }
+  }
+
+
+  .providers-row {
+
+    border: solid $borderDebugSize black;
+    display: flex;
+    margin-top: 221px;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+
+
+    .illustration {
+      border: solid $borderDebugSize darkred;
+      width: 50%;
+
+      .bg-cont {
+        border: solid $borderDebugSize rosybrown;
+        padding-left: 57px;
+        margin-left: -57px;
+        padding-right: 57px;
+        margin-right: -57px;
+        height: 475px;
+        background: url('../img/illust-providers.png') no-repeat;
+      }
+    }
+
+    .moto {
+      border: solid $borderDebugSize black;
+      width: 50%;
+      margin-top: 68px;
+      padding-left: 128px;
+
+      .separator {
+        margin-top: 24px;
+      }
+
+      .text {
+        color: $textDescriptionColor;
+        font-family: $mainFontFamily;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+      }
+    }
+
+    .button-cont {
+      margin-top: 44px;
+    }
+
+    .dots-cont {
+      position: absolute;
+      right: -241px;
+      bottom: -103px;
+    }
+
+
+  }
+
+  .download-row {
+
+    border: solid $borderDebugSize mediumvioletred;
+    display: flex;
+    margin-top: 228px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    .illustration {
+      border: solid $borderDebugSize darkred;
+      width: 50%;
+
+      .bg-cont {
+        border: solid $borderDebugSize goldenrod;
+        height: 436px;
+        padding-left: 27px;
+        margin-left: -27px;
+        padding-right: 27px;
+        margin-right: -27px;
+
+        background: url('../img/illust-mobile.png') no-repeat;
+      }
+    }
+
+    .moto  {
+      border: solid $borderDebugSize black;
+      width: 50%;
+
+      .separator {
+        margin-top: 24px;
+      }
+    }
+
+    .button-cont {
+      margin-top: 44px;
+    }
+  }
+
+  .customer-row {
+    margin-top: 266px;
+    position: relative;
+
+    .dots-cont {
+      position: absolute;
+      bottom: 40px;
+      z-index: 1;
+    }
+
+    .shape {
+      /* border: solid $borderDebugSize mediumvioletred; */
+      border: solid 1px white;
+      z-index: 2;
+      position: relative;
+      margin: 0 52px;
+
+      justify-content: center;
+      align-items: start;
+      flex-wrap: wrap;
+
+
+      border-radius: 24px;
+      height: 440px;
+
+
+      background: linear-gradient(45deg, rgba(90,152,242,1) 15%, rgba(103,195,243,1) 100%);
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 68px;
+
+        &, * {
+          color: white;
+        }
+
+        .separator {
+          border-bottom-color: white;
+        }
+
+      }
+
+      .review {
+        display: flex;
+        align-items: center;
+        margin-top: 66px;
+
+        .img-cont {
+          width: 25%;
+          text-align: right;
+          padding-right: 18px;
+
+          img {
+            border: solid 4px white;
+            border-radius: 70px;
+          }
+        }
+
+        .credentials {
+          width: 25%;
+          padding-left: 10px;
+
+          h4 {
+            font-family: $mainFontFamily;
+            font-weight: 600;
+            font-size: 22px;
+            color: white;
+          }
+
+          p {
+            margin-top: 10px;
+            font-family: $mainFontFamily;
+            font-weight: 100;
+            font-size: 18px;
+            color: white;
+          }
+
+        }
+
+        .comment {
+          width: 50%;
+          padding-left: 22px;
+          padding-right: 130px;
+          font-family: $mainFontFamily;
+          font-weight: 100;
+          font-size: 19px;
+          line-height: 30px;
+          color: white;
+        }
+
+
+        .info1 {
+          margin: 0;
+
+          line-height: 48px;
+          letter-spacing: 0.02em;
+
+        }
+      }
+
+      .dots-cont.on-shape  {
+        position: absolute;
+        right: -47px;
+        top: -14px;
+      }
+
+
+
+      .dots-left {
+        background: url('../img/dots-1.png') no-repeat;
+        position: absolute;
+        bottom: -5px;
+        left: -18px;
+      }
+
+
+    }
+
+    .paginator {
+      display: flex;
+      justify-content: center;
+      margin-top: 42px;
+
+      .pages {
+        border: solid $borderDebugSize black;
+        padding: 0 88px;
+        display: flex;
+
+        align-items: center;
+
+        .page {
+
+          cursor: pointer;
+
+          &:first-child {
+            margin-left: 16px;
+          }
+          background: #5B9BF3;
+          opacity: .3;
+          width: 10px;
+          height: 10px;
+          margin-right: 16px;
+          border-radius: 5px;
+
+
+          &.act {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+  }
+
+
+
+  .articles-row {
+    position: relative;
+    margin-top: 50px;
+    border: solid $borderDebugSize black;
+
+    .dots-cont {
+      position: absolute;
+      top: 105px;
+      z-index: 1;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h3 {
+      font-family: $mainFontFamily;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 56px;
+      letter-spacing: 0.02em;
+      color: black;
+
+    }
+
+    .read-more{
+      color: #4089ED
+    }
+
+    .bg-cont {
+      top: 81px;
+      right: -488px;
+      position: absolute;
+      border: solid $borderDebugSize brown;
+      width: 778px;
+      height: 557px;
+      background: url('../img/lapka2.png') no-repeat;
+      z-index: 1;
+    }
+
+
+
+    .articles-cont {
+
+      position: relative;
+      border: solid $borderDebugSize red;
+      margin-top: 78px;
+      display: grid;
+      grid-template-columns: repeat(3, 350px);
+      gap: 30px;
+      padding: 0 50px;
+      z-index: 2;
+
+      .box {
+        width: 351px;
+        height: 512px;
+        overflow: hidden;
+
+        border: solid $borderDebugSize green;
+        border-radius: 20px;
+        background: white;
+        box-shadow: 10px 15px 26px 0 rgb(0 0 0 / 5%);
+
+        .text-cont {
+          padding: 0 30px;
+
+          h4 {
+            margin-top: 28px;
+            font: 600 24px $mainFontFamily;
+          }
+
+          p {
+            margin-top: 18px;
+            color: $textDescriptionColor;
+            font: 100 16px $mainFontFamily;
+            line-height: 28px;
+          }
+
+
+          .read-more {
+            margin-top: 30px;
+            &, * {
+              text-decoration: none;
+              color: #4089ED;
+              font: 400 17px $mainFontFamily;
+            }
+
+            img {
+              margin-left: 15px;
+            }
+
+
+          }
+        }
+      }
+    }
+
+    .button-cont {
+      margin-top: 72px;
+      button {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+  .footer-container {
+  border: solid $borderDebugSize green;
+
+  .dots-row {
+    border: solid $borderDebugSize blue;
+    max-width: 1218px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+
+    .dots-cont.right {
+      position: absolute;
+      right: 0;
+      top: 33px;
+      z-index: 1;
+    }
+  }
+
+  .bg-cont {
+
+    position: relative;
+    height: 432px;
+    background: #67C3F3;
+    background: linear-gradient(45deg, rgba(90,152,242,1) 15%, rgba(103,195,243,1) 100%);
+    border: solid $borderDebugSize violet;
+    overflow:hidden;
+    z-index: 2;
+
+    .footer-row {
+      border: solid $borderDebugSize red;
+      height: 318px;
+      max-width: 1218px;
+      margin: 114px auto 0;
+      display: flex;
+
+      &, & * {
+        color: white;
+      }
+
+      .logo-cont{
+        margin-bottom: 20px;
+      }
+
+
+      .col {
+        font-family: $mainFontFamily;
+        flex: 1 1 auto;
+        border: solid $borderDebugSize black;
+        padding: 0 70px 0 0;
+      }
+
+      .copyright-col {
+        width: 40%;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 100;
+
+        p {
+          margin: 0 0 40px;
+        }
+      }
+
+      .company-menu-col, .region-menu-col, .help-menu-col {
+        width: 20%;
+
+        h4 {
+          margin-bottom: 35px;
+          font-size: 20px;
+          font-weight: 600;
+        }
+        // html entity copyright
+
+        li {
+          margin-bottom: 20px;
+          &, * {
+            font-weight: 100;
+            font-size: 18px;
+            line-height: 18px;
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .dots-cont.on-shape {
+      position: absolute;
+      bottom: -18px;
+      left: -18px;
+    }
+
+
+  }
+}
