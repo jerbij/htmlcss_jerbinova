@@ -1,0 +1,134 @@
+/* layout */
+html {
+    height: 100%
+}
+
+body.form-container {
+    margin: 0;
+    height: 100%;
+}
+
+body.form-container form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* 3 main rows */
+body.form-container h1 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+
+    height: 50px;
+    margin: 0;
+    background: #6aa56a;
+}
+
+body.form-container form .form-body {
+    margin: 0;
+    padding: 0;
+    /* properties for .inputs as flex-item */
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+
+    /* properties for .inputs as flex-container */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: calc(100% - 100px);
+}
+
+body.form-container .buttons-row {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+
+    margin: 0;
+    text-align: center;
+    border: none;
+
+    cursor: pointer;
+    background: #dddddd;
+
+    font-weight: bold;
+    height: 50px;
+    font-size: 30px;
+
+}
+
+body.form-container .buttons-row button {
+
+    margin-right: 1em;
+    background: #6aa56a;
+    color: white;
+    font-weight: bold;
+    min-width: 150px;
+    border: solid 2px #777;
+
+}
+
+body.form-container .buttons-row button:last-child {
+
+    margin-right: 0;
+}
+
+body.form-container form {
+
+    height: 600px;
+    max-width: 1200px;
+}
+
+/* layout of items inside form */
+
+
+body.form-container form fieldset {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+
+    box-sizing: border-box;
+    width: calc(50% - 20px);
+    margin: 0 10px;
+
+}
+
+body.form-container p {
+    overflow: auto;
+    margin: 0;
+}
+
+body.form-container p label,
+body.form-container p input, body.form-container p textarea,
+body.form-container p select {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    margin: 10px 0;
+}
+
+body.form-container p label {
+    /* text-align: right; */ /* the right way */
+    padding-right: 1Em;
+}
+
+/* inputs styles */
+label {
+    display: block;
+}
+
+input[type=text] {
+    display: block;
+}
+
+fieldset.invisible {
+    border: none;
+    padding: 0;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    min-width: 300px;
+}
+

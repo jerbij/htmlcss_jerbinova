@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="form-container">
+
+
+<form action=""
+      enctype="text/plain" method="get">
+
+    <h1>Contact manager</h1>
+    <div class="form-body">
+        <fieldset class="invisible">
+            <p>
+                <label for="first-name">First name</label>
+                <input type="text" size="40" id="first-name" name="first_name"/>
+            </p>
+
+            <p>
+                <label for="last-name">Last name</label>
+                <input type="text" size="40" id="last-name" name="last_name"/>
+            </p>
+        </fieldset>
+
+        <fieldset class="invisible">
+            <p>
+                <label for="address">Address</label>
+                <textarea rows="10" cols="45" id="address" name="address"></textarea>
+            </p>
+
+            <p>
+                <label>City</label>
+                <select name="city">
+                    <option value="kyiv">Kyiv</option>
+                    <option value="odesa">Odesa</option>
+                    <option value="lviv">Lviv</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Authentication</legend>
+            <p>
+                <label for="login">Login: </label>
+                <input type="text" name="login" id="login"/></p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password"/>
+            </p>
+        </fieldset>
+        <p>
+        <fieldset>
+            <legend>Pick your favorite food:</legend>
+            <label><input type="checkbox" name="food" value="Burgers" checked>Burgers</label>
+            <label><input type="checkbox" name="food" value="Sushi">Sushi</label>
+            <label><input type="checkbox" name="food" value="Fries">Fries</label>
+            <label><input type="checkbox" name="food" value="Pizza">Pizza</label>
+            </p>
+        </fieldset>
+
+        <p>
+        <fieldset>
+            <legend>Best chocolate bar</legend>
+            <label><input type="radio" name="candies" value="twix" checked/>Twix❤</label>
+            <label><input type="radio" name="candies" value="snikers">Snickers</label>
+            <label><input type="radio" name="candies" value="snikers">Mars</label>
+        </fieldset>
+    </div>
+
+    <div class="buttons-row">
+        <button type="reset">Reset</button>
+        <button type="submit">Send</button>
+    </div>
+
+</form>
+
+</body>
+</html>
