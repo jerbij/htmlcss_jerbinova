@@ -22,8 +22,14 @@ a {
 }
 body{
     margin: 0;
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
     font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1600px;
 }
 
 button {
@@ -43,8 +49,6 @@ ul   {
   margin: 30px 67px 0;
 
 }
-
-
 .logo-container {
     width: 100px;
     padding: 6px 0 0;
@@ -75,7 +79,6 @@ ul   {
 .header-menu li {
     display: inline;
 }
-
 
 .menu-item {
   display: flex;
@@ -131,15 +134,14 @@ ul   {
 
 .main-content {
     margin-top: 131px;
-
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-
 }
 
 .main-content .moto {
-    margin: 50px 0;
+
     width: 583px;
 }
 
