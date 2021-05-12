@@ -6,6 +6,10 @@ $textDescriptionColor: #7D7987;
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .separator {
   border-bottom: solid 2px black;
   width: 56px;
